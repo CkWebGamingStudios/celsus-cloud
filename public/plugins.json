@@ -1,0 +1,20 @@
+{
+"plugins": [
+{
+"id": "CPME",
+"name": "Celsus Project Manager & Editor",
+"version": "1.0.0",
+"type": "official",
+"url": "https://celsus-cloud.pages.dev/plugins/cpme-latest.tgz",
+"description": "GUI dashboard for managing and editing Celsus projects."
+},
+{
+"id": "Hypershell",
+"name": "Celsus Hypershell",
+"version": "1.0.0",
+"type": "official",
+"url": "https://celsus-cloud.pages.dev/plugins/hypershell-latest.tgz",
+"description": "Interactive shell and terminal for Celsus."
+}
+]
+}

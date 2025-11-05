@@ -1,0 +1,12 @@
+{
+"name": "celsus-cloud",
+"version": "1.0.0",
+"description": "Celsus Cloud Plugin Registry hosted on Cloudflare Pages.",
+"scripts": {
+"dev": "wrangler pages dev ./public",
+"deploy": "wrangler pages deploy ./public"
+},
+"devDependencies": {
+"wrangler": "^3.0.0"
+}
+}

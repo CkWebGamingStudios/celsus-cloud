@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Celsus Cloud</title></head>
+<body>
+  <h1>Celsus Cloud Plugin Registry</h1>
+  <div id="plugins">Loading…</div>
+  <script>
+    async function load(){
+      const res = await fetch('/api/plugins');
+      const data = await res.json();
+      const el = document.getElementById('plugins');
+      el.innerHTML = data.plugins.map(p=>`
+        <div>
+          <h3>${p.name} <small>v${p.version}</small></h3>
+          <p>${p.description}</p>
+          <pre>celsus install ${p.id}</pre>
+          <a href="${p.url}" download>Download</a>
+        </div>
+      `).join('\n');
+    }
+    load();
+  </script>
+</body>
+</html>
