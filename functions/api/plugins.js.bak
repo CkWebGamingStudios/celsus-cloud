@@ -1,0 +1,21 @@
+export async function onRequest() {
+  const plugins = [
+  {
+    "id": "Hypershell",
+    "name": "Hypershell",
+    "version": "1.0.1",
+    "description": "Improved shell interface",
+    "url": "https://github.com/CkWebGamingStudios/celsus-plugins/releases/download/v1.0.1/hypershell-1.0.1.zip"
+  },
+  {
+    "id": "CPME",
+    "name": "Celsus Project Manager & Editor",
+    "version": "1.0.0",
+    "description": "GUI dashboard for Celsus projects.",
+    "url": "/plugins/cpme-1.0.0.zip"
+  }
+];
+  return new Response(JSON.stringify({ plugins }, null, 2), {
+    headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
+  });
+}
