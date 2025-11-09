@@ -6,7 +6,7 @@ export async function onRequest(context) {
       name: "Celsus Hypershell",
       version: "1.0.0",
       description: "Interactive terminal shell for Celsus.",
-      url: "/plugins/hypershell-1.0.0.zip"
+      url: "https://github.com/user-attachments/files/23417289/hypershell-1.0.1.zip"
     },
     "cpme": {
       id: "CPME",
